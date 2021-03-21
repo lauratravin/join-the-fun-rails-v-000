@@ -1,4 +1,5 @@
 class ChangeColumn < ActiveRecord::Migration[5.0]
-  def change
-  end
+  change_table :rides do |t|
+    t.rename :passanger_id, :passenger_id
+end
 end
